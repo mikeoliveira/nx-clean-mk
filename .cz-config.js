@@ -1,41 +1,30 @@
 module.exports = {
   types: [
     { value: 'feat', name: 'feat:     Uma nova feature' },
-    { value: 'fix', name: 'fix:      A bug fix' },
-    { value: 'docs', name: 'docs:     Documentation only changes' },
+    { value: 'fix', name: 'fix:      Uma correção de bug' },
+    { value: 'docs', name: 'docs:     mudanças na documentação' },
     {
       value: 'style',
-      name: 'style:    Changes that do not affect the meaning of the code\n            (white-space, formatting, missing semi-colons, etc)',
+      name: 'style:    Mudanças que não afetam o comportamento do código\n            (white-space, formatting, missing semi-colons, etc)',
     },
     {
       value: 'refactor',
-      name: 'refactor: A code change that neither fixes a bug nor adds a feature',
+      name: 'refactor: Uma alteração de código que não corrige um bug nem adiciona um recurso',
     },
     {
       value: 'perf',
-      name: 'perf:     A code change that improves performance',
+      name: 'perf:     Uma mudança de código que melhora o desempenho',
     },
-    { value: 'test', name: 'test:     Adding missing tests' },
+    { value: 'test', name: 'test:     Adicionando cobertura de testes' },
     {
       value: 'chore',
-      name: 'chore:    Changes to the build process or auxiliary tools\n            and libraries such as documentation generation',
+      name: 'chore:    Mudanças no processo de construção ou ferramentas auxiliares\n            e bibliotecas como geração de documentação',
     },
-    { value: 'revert', name: 'revert:   Revert to a commit' },
-    { value: 'WIP', name: 'WIP:      Work in progress' },
+    { value: 'revert', name: 'revert:   Reverter para um commit' },
+    { value: 'WIP', name: 'WIP:      Trabalho em progresso' },
   ],
 
   scopes: [
-    { name: 'app-facade' },
-    { name: 'audit-log-service' },
-    { name: 'auth-service' },
-    { name: 'calendar-scheduler-service' },
-    { name: 'chat-service' },
-    { name: 'cto-user-service' },
-    { name: 'notification-service' },
-    { name: 'patient-service' },
-    { name: 'payment-service' },
-    { name: 'task-manager-service' },
-    { name: 'payment-service-package' },
     { name: 'migration' },
     { name: 'core' },
     { name: 'configs' },
@@ -43,23 +32,22 @@ module.exports = {
     { name: 'docker' },
     { name: 'docs' },
     { name: 'setup' },
+    { name: 'ui' },
   ],
   // override the messages, defaults are as follows
   messages: {
-    type: "Select the type of change that you're committing:",
-    scope: 'Denote the SCOPE of this change:',
+    type: "Selecione o tipo de mudança do seu commit:",
+    scope: 'Indique o SCOPE (escopo) desta mudança:',
     // used if allowCustomScopes is true
     customScope: 'Denote the SCOPE of this change:',
-    subject: 'Write a SHORT, IMPERATIVE tense description of the change:\n',
-    body: 'Provide a LONGER description of the change (optional). Use "|" to break new line:\n',
-    breaking: 'List any BREAKING CHANGES (optional):\n',
+    subject: 'Escreva uma descrição CURTA, IMPERATIVA sobre a mudança:\n',
+    body: 'Forneça uma descrição MAIS LONGA da alteração (opcional). Use "|" para quebrar nova linha:\n',
+    breaking: 'Liste qualquer BREAKING CHANGES (optional):\n',
     footer:
-      'List any JIRA ISSUES CLOSED by this change (optional). E.g.: TEL-1100, TEL-1200:\n',
-    confirmCommit: 'Are you sure you want to proceed with the commit above?',
-    ticketNumber:
-      'Enter ticket number (digits only). Prefix "TEL-" will be added automatically:',
+      'Liste quaisquer demandas do AZURE DEVOPS para esta mudança (opcional) Ex.: #1100, #1200:\n',
+    confirmCommit: 'Tem certeza de que deseja prosseguir com o commit acima?'
   },
-  // limit subject length
+
   breaklineChar: '|', // It is supported for fields body and footer.
   footerPrefix: ''
 };
