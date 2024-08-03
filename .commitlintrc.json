@@ -1,5 +1,34 @@
 {
   "extends": [
     "@commitlint/config-conventional"
-  ]
+  ],
+  "rules": {
+    "header-max-length": [
+      2, // Level do erro
+      "always", // Aplicacao da regra
+      100 // Valor a ser utilizador
+    ],
+    "type-case": [
+      0,
+      "always",
+      "lower-case"
+    ],
+    "type-enum": [
+      2,
+      "always",
+      [
+        "build",
+        "ci",
+        "docs",
+        "feat",
+        "fix",
+        "perf",
+        "refactor",
+        "revert",
+        "style",
+        "test",
+        "WIP"
+      ]
+    ]
+  }
 }
