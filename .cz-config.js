@@ -25,18 +25,21 @@ module.exports = {
   ],
 
   scopes: [
-    { name: 'migration' },
     { name: 'core' },
     { name: 'configs' },
     { name: 'deps' },
     { name: 'docker' },
     { name: 'docs' },
     { name: 'setup' },
+    { name: 'todo-domain' },
+    { name: 'todo-data-access' },
+    { name: 'todo-presentation' },
     { name: 'ui' },
+    { name: 'migration' },
   ],
   // override the messages, defaults are as follows
   messages: {
-    type: "Selecione o tipo de mudança do seu commit:",
+    type: 'Selecione o tipo de mudança do seu commit:',
     scope: 'Indique o SCOPE (escopo) desta mudança:',
     // used if allowCustomScopes is true
     customScope: 'Denote the SCOPE of this change:',
@@ -45,9 +48,9 @@ module.exports = {
     breaking: 'Liste qualquer BREAKING CHANGES (optional):\n',
     footer:
       'Liste quaisquer demandas do AZURE DEVOPS para esta mudança (opcional) Ex.: #1100, #1200:\n',
-    confirmCommit: 'Tem certeza de que deseja prosseguir com o commit acima?'
+    confirmCommit: 'Tem certeza de que deseja prosseguir com o commit acima?',
   },
 
   breaklineChar: '|', // It is supported for fields body and footer.
-  footerPrefix: ''
+  footerPrefix: '',
 };
