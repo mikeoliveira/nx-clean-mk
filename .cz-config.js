@@ -34,6 +34,11 @@ module.exports = {
     { name: 'setup' },
     { name: 'ui' },
   ],
+  allowTicketNumber: false,
+  isTicketNumberRequired: false,
+  ticketNumberPrefix: 'TICKET-',
+  ticketNumberSuffix:'',
+  ticketNumberRegExp: '\\d{1,5}',
   // override the messages, defaults are as follows
   messages: {
     type: "Selecione o tipo de mudança do seu commit:",
