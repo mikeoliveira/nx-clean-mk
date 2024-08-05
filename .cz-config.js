@@ -38,7 +38,6 @@ module.exports = {
   isTicketNumberRequired: false,
   ticketNumberPrefix: "#",
   ticketNumberRegExp: "\\d{1,5}",
-  appendBranchNameToCommitMessage: true,
   // override the messages, defaults are as follows
   messages: {
     type: "Selecione o tipo de mudança do seu commit:",
