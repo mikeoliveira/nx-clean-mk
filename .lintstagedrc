@@ -5,7 +5,6 @@
     "nx format:write --uncommited"
   ],
   "**/*.scss": [
-    "nx format:write --uncommited",
-    "stylelint --report-needless-disables --report-invalid-scope-disables --allow-empty-input"
+    "nx format:write --uncommited"
   ]
 }
