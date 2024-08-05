@@ -42,12 +42,10 @@ module.exports = {
     customScope: 'Denote the SCOPE of this change:',
     subject: 'Escreva uma descrição CURTA, IMPERATIVA sobre a mudança:\n',
     body: 'Forneça uma descrição MAIS LONGA da alteração (opcional). Use "|" para quebrar nova linha:\n',
-    breaking: 'Liste qualquer BREAKING CHANGES (optional):\n',
-    footer:
-      'Liste quaisquer demandas do AZURE DEVOPS para esta mudança (opcional) Ex.: #1100, #1200:\n',
+    breaking: 'List any BREAKING CHANGES (optional):\n',
+    footer: 'Liste quaisquer demandas do AZURE DEVOPS para esta mudança (opcional) Ex.: #1100, #1200:\n',
     confirmCommit: 'Tem certeza de que deseja prosseguir com o commit acima?'
   },
-
   breaklineChar: '|', // It is supported for fields body and footer.
-  footerPrefix: ''
+  footerPrefix: 'AZURE DEVOPS: '
 };
