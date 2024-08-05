@@ -16,7 +16,7 @@ Rode `npx nx run ui:build-storybook` para buildar o storybook
 
 #### Testar Storybook
 Rode `npx nx run ui:test-storybook` para buildar o storybook
-Para rodar os teste localmente talvez seja necessário rodar o seguinte commando `npx playwright install`
+Para rodar os teste localmente talvez seja necessário rodar o seguinte commando `npx playwright install` para instalar o 
 
 
 ### Estrutura de diretorios
