@@ -4,20 +4,21 @@ Esta biblioteca foi gerada com [Nx](https://nx.dev).
 
 ## Storybook
 
-
 ### Comandos
 
 #### Executar Storybook
+
 Rode `npx nx run ui:storybook` para executar o storybook
 Por padrão será executado na porta 4400 - Link: http://localhost:4400/
 
 #### Contruir (Build) Storybook
+
 Rode `npx nx run ui:build-storybook` para buildar o storybook
 
 #### Testar Storybook
-Rode `npx nx run ui:test-storybook` para buildar o storybook
-Para rodar os teste localmente talvez seja necessário rodar o seguinte commando `npx playwright install` para instalar o 
 
+Rode `npx nx run ui:test-storybook` para buildar o storybook
+Para rodar os teste localmente talvez seja necessário rodar o seguinte commando `npx playwright install` para instalar o
 
 ### Estrutura de diretorios
 
@@ -46,7 +47,7 @@ Obs.: Utilize a extensão [Nx Console](https://marketplace.visualstudio.com/item
             \---scss
             | [global styles]
 ```
+
 ### Documentação dos Componentes
+
 [Link Nx Compodoc](https://nx.dev/recipes/storybook/angular-storybook-compodoc)
-
-
